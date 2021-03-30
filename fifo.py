@@ -2,9 +2,9 @@ from main import Frame
 
 page_sequence = input("Enter size of input as [P1 P2 P3 ...... PN]: \n")
 page_sequence_list = page_sequence.upper().split(' ')
+page_sequence_list = [page.strip() for page in page_sequence_list if page != '']
 page_miss = 0
 page_hits = 0
-print(page_sequence_list)
 
 frame_three = Frame(3)
 frame_four = Frame(4)

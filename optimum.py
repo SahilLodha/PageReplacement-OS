@@ -4,6 +4,7 @@ n_frame = int(input("Enter the no of frames: "))
 frame_obj = Frame(n_frame)
 page_sequence = input("Enter the frame sequence [P1 P2 P3 P4 P5 ... PN]: ")
 page_sequence_list = page_sequence.split(' ')
+page_sequence_list = [page.strip() for page in page_sequence_list if page != '']
 page_hits = 0
 page_miss = 0
 

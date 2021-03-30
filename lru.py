@@ -3,6 +3,7 @@ from main import Frame
 # simulation LRU
 page_sequence = input("Enter the page sequence [P1 P2 P3 P4 .... PN]:")
 page_sequence_list = page_sequence.split(' ')
+page_sequence_list = [page.strip() for page in page_sequence_list if page != '']
 n_frames = int(input("Enter the number of Frames: "))
 
 page_hits = 0
